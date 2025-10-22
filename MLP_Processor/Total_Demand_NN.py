@@ -14,7 +14,7 @@ from scipy.stats import uniform, randint
 
 scope = 49
 # Load data
-data = pd.read_csv("A.csv")
+data = pd.read_csv("Preprocessed_Solar_Power_Data_v3.csv")
 
 # create a DataFrame for all lagged features
 lagged_cols = {f"lag_{lag}": data["TOTALDEMAND"].shift(lag) for lag in range(1, scope)}
